@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>三角符号</title>
+  <style>
+  div {
+    margin: 30px auto;
+    position: relative;
+    border: 2px solid #e0e0e0;
+    border-radius: 1px;
+    width: 150px;
+    height: 80px;
+    background: white;
+  }
+  .test-1:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 15px solid rgba(15,15,15,0);
+    border-left: 15px solid rgba(15,15,15,0);
+    border-right: 15px solid rgba(15,15,15,0);
+    border-bottom: 15px solid rgba(136,136,136,1);
+    position: absolute;
+    top: -30px;
+    left: 8px;
+  }
+  .test-2:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 15px solid rgba(255,0,0,0);
+    border-left: 15px solid rgba(255,0,0,0);
+    border-right: 15px solid rgba(255,0,0,0);
+    border-bottom: 15px solid rgba(255,0,0,1);
+    transform: rotatez(45deg);
+    position: absolute;
+    top: -17px;
+    left: 137px;
+  }
+  .test-3:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-top: 2px solid #e0e0e0;
+    border-left: 2px solid #e0e0e0;
+    transform: rotatez(45deg);
+    position: absolute;
+    top: -12px;
+    left: 10px;
+  }
+</style>
+</head>
+<body>
+  <div class="test-1"></div>
+  <div class="test-2"></div>
+  <div class="test-3"></div>
+</body>
+</html>
